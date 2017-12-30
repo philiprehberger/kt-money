@@ -3,6 +3,7 @@
 [![Tests](https://github.com/philiprehberger/kt-money/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-money/actions/workflows/publish.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/money)](https://central.sonatype.com/artifact/com.philiprehberger/money)
 [![License](https://img.shields.io/github/license/philiprehberger/kt-money)](LICENSE)
+[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
 
 Type-safe monetary values with currency support and precise arithmetic.
 
