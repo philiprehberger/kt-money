@@ -1,9 +1,8 @@
 # money
 
 [![Tests](https://github.com/philiprehberger/kt-money/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-money/actions/workflows/publish.yml)
-[![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/money)](https://central.sonatype.com/artifact/com.philiprehberger/money)
-[![License](https://img.shields.io/github/license/philiprehberger/kt-money)](LICENSE)
-[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
+[![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/money.svg)](https://central.sonatype.com/artifact/com.philiprehberger/money)
+[![Last updated](https://img.shields.io/github/last-commit/philiprehberger/kt-money)](https://github.com/philiprehberger/kt-money/commits/main)
 
 Type-safe monetary values with currency support and precise arithmetic.
 
@@ -63,6 +62,24 @@ total.format() // "$21.59"
 ./gradlew build
 ```
 
+## Support
+
+If you find this project useful:
+
+⭐ [Star the repo](https://github.com/philiprehberger/kt-money)
+
+🐛 [Report issues](https://github.com/philiprehberger/kt-money/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+
+💡 [Suggest features](https://github.com/philiprehberger/kt-money/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
+
+❤️ [Sponsor development](https://github.com/sponsors/philiprehberger)
+
+🌐 [All Open Source Projects](https://philiprehberger.com/open-source-packages)
+
+💻 [GitHub Profile](https://github.com/philiprehberger)
+
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/philiprehberger)
+
 ## License
 
-MIT
+[MIT](LICENSE)
