@@ -37,6 +37,14 @@ public class Money private constructor(
 
     public fun roundTo(decimalPlaces: Int): Money = Money(amount.setScale(decimalPlaces, RoundingMode.HALF_EVEN), currency)
 
+    /** Calculate [percent]% of this monetary value. */
+    public fun percentage(percent: BigDecimal): Money =
+        Money(amount.multiply(percent).divide(BigDecimal(100), currency.minorUnits, RoundingMode.HALF_EVEN), currency)
+
+    /** Subtract [percent]% from this monetary value. */
+    public fun discount(percent: BigDecimal): Money =
+        this - percentage(percent)
+
     /** Split into [n] parts, distributing remainder from the first share. */
     public fun allocate(n: Int): List<Money> {
         require(n > 0) { "n must be > 0" }

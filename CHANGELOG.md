@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.0] - 2026-04-05
+
+- Add `percentage(percent)` to calculate a percentage of a monetary value
+- Add `discount(percent)` to subtract a percentage from a monetary value
+
 ## 0.1.4 (2026-03-31)
 
 - Standardize README to 3-badge format with emoji Support section

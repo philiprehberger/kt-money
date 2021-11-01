@@ -11,7 +11,7 @@ Type-safe monetary values with currency support and precise arithmetic.
 ### Gradle (Kotlin DSL)
 
 ```kotlin
-implementation("com.philiprehberger:money:0.1.3")
+implementation("com.philiprehberger:money:0.2.0")
 ```
 
 ### Maven
@@ -20,7 +20,7 @@ implementation("com.philiprehberger:money:0.1.3")
 <dependency>
     <groupId>com.philiprehberger</groupId>
     <artifactId>money</artifactId>
-    <version>0.1.3</version>
+    <version>0.2.0</version>
 </dependency>
 ```
 
@@ -39,6 +39,10 @@ Money.of(0.1, "USD") + Money.of(0.2, "USD") // USD 0.30
 // Fair allocation
 Money.of(100, "USD").allocate(3) // [33.34, 33.33, 33.33]
 
+// Percentage and discount
+Money.of(200, "USD").percentage(BigDecimal("15")) // USD 30.00
+Money.of(200, "USD").discount(BigDecimal("15"))   // USD 170.00
+
 total.format() // "$21.59"
 ```
 
@@ -50,6 +54,8 @@ total.format() // "$21.59"
 | `Money + Money`, `Money - Money` | Arithmetic (same currency only) |
 | `Money * factor`, `Money / factor` | Scalar multiplication/division |
 | `Money.allocate(n)` | Split fairly without losing cents |
+| `Money.percentage(percent)` | Calculate percentage of amount |
+| `Money.discount(percent)` | Subtract percentage from amount |
 | `Money.format(locale)` | Locale-aware currency formatting |
 | `Money.isZero()`, `isPositive()`, `isNegative()` | Value checks |
 | `Money.convertTo(code, rate)` | Currency conversion |
