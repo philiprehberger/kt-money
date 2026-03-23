@@ -1,6 +1,6 @@
 # money
 
-[![CI](https://github.com/philiprehberger/kt-money/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-money/actions/workflows/publish.yml)
+[![Tests](https://github.com/philiprehberger/kt-money/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-money/actions/workflows/publish.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/money)](https://central.sonatype.com/artifact/com.philiprehberger/money)
 [![License](https://img.shields.io/github/license/philiprehberger/kt-money)](LICENSE)
 
@@ -11,9 +11,7 @@ Type-safe monetary values with currency support and precise arithmetic.
 ### Gradle (Kotlin DSL)
 
 ```kotlin
-dependencies {
-    implementation("com.philiprehberger:money:0.1.2")
-}
+implementation("com.philiprehberger:money:0.1.3")
 ```
 
 ### Maven
@@ -22,7 +20,7 @@ dependencies {
 <dependency>
     <groupId>com.philiprehberger</groupId>
     <artifactId>money</artifactId>
-    <version>0.1.2</version>
+    <version>0.1.3</version>
 </dependency>
 ```
 
